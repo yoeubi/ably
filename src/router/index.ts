@@ -1,9 +1,9 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
-import Login from "../views/Login.vue";
-import Profile from "../views/Profile.vue";
-import CreateAuth from "../views/CreateAuth.vue";
-import VerifyAuth from "../views/VerifyAuth.vue";
-import ChangePassword from "../views/ChangePassword.vue";
+import Login from "../components/Login.vue";
+import Profile from "../components/Profile.vue";
+import CreateAuth from "../components/CreateAuth.vue";
+import VerifyAuth from "../components/VerifyAuth.vue";
+import ChangePassword from "../components/ChangePassword.vue";
 
 const routes: Array<RouteRecordRaw> = [
   {
