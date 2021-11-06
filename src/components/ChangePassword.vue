@@ -2,8 +2,10 @@
   <div>
     <h1>비밀번호 변경</h1>
     <form @submit.prevent="onSubmit">
-      <input type="password" v-model="password" />
-      <input type="password" v-model="newPassword" />
+      <label for="password">기존 비밀번호</label>
+      <input type="password" v-model="password" id="password" />
+      <label for="newPassword">새로운 비밀번호</label>
+      <input type="password" v-model="newPassword" id="newPassword" />
       <button>비밀번호 변경</button>
     </form>
   </div>

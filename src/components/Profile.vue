@@ -2,12 +2,11 @@
   <div>
     <h1>회원정보</h1>
     <div>
-      <div>이름: {{ username }}</div>
-      <div>이메일: {{ useremail }}</div>
       <div>
-        프로필 이미지
         <img v-if="image" :src="image" alt="이미지" />
       </div>
+      <div>이름: {{ username }}</div>
+      <div>이메일: {{ useremail }}</div>
     </div>
     <button @click="onLogout">로그아웃</button>
   </div>

@@ -8,7 +8,7 @@
       <input type="password" id="password" v-model="password" />
       <button>로그인</button>
     </form>
-    <button @click="onReset">비밀번호 재설정</button>
+    <button class="reset" @click="onReset">비밀번호 재설정</button>
   </div>
 </template>
 
