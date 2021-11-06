@@ -1,20 +1,41 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
-import Home from "../views/Home.vue";
+import Login from "../views/Login.vue";
+import Profile from "../views/Profile.vue";
+import ResetPassword from "../views/ResetPassword.vue";
+import CreateAuth from "../views/CreateAuth.vue";
+import VerifyAuth from "../views/VerifyAuth.vue";
+import ChangePassword from "../views/ChangePassword.vue";
 
 const routes: Array<RouteRecordRaw> = [
   {
     path: "/",
-    name: "Home",
-    component: Home,
+    name: "Login",
+    component: Login,
   },
   {
-    path: "/about",
-    name: "About",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/About.vue"),
+    path: "/profile",
+    name: "Profile",
+    component: Profile,
+  },
+  {
+    path: "/resetpassword",
+    name: "ResetPassword",
+    component: ResetPassword,
+  },
+  {
+    path: "/createauth",
+    name: "CreateAuth",
+    component: CreateAuth,
+  },
+  {
+    path: "/verifyauth",
+    name: "VerifyAuth",
+    component: VerifyAuth,
+  },
+  {
+    path: "/changepassword",
+    name: "ChangePassword",
+    component: ChangePassword,
   },
 ];
 
